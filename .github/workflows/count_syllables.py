@@ -11,7 +11,6 @@ with open('missing_words.json') as f:
 cmudict = cmudict.dict()
 
 def count_syllables(words):
-    """Use corpora to count syllables in English word or phrase."""
     # prep words for cmudict corpus
     words = words.replace('-', ' ')
     words = words.lower().split()
